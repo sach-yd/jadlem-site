@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jadłem — Polityka prywatności</title><style>:root{color-scheme:light dark;--bg:#fff;--fg:#1c1c1e;--mute:#6b6b70;--acc:#0a7a4b;--line:#e3e3e6}
+@media(prefers-color-scheme:dark){:root{--bg:#111113;--fg:#f2f2f4;--mute:#a0a0a8;--acc:#4fd18b;--line:#2a2a2e}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:42rem;margin:0 auto;padding:2rem 1rem 4rem}
+h1{font-size:2rem;line-height:1.2}h2{font-size:1.25rem;margin-top:2rem}
+a{color:var(--acc)}nav{display:flex;gap:1rem;flex-wrap:wrap;padding-bottom:1rem;border-bottom:1px solid var(--line);font-size:.95rem}
+footer{margin-top:3rem;color:var(--mute);font-size:.9rem}code{font-size:.9em}</style></head>
+<body><main><nav><a href="../">Jadłem</a><a href="privacy.html">Polityka prywatności</a><a href="../support.html">Wsparcie</a><a href="../privacy.html">English</a></nav>
+<h1>Polityka prywatności</h1>
+<p>Ostatnia aktualizacja: 25 września 2026</p>
+<p>Jadłem to aplikacja do liczenia kalorii i śledzenia odżywiania. Ta polityka wyjaśnia, co aplikacja robi z twoimi informacjami. W skrócie: Jadłem nie ma własnych serwerów, więc nie istnieje żadna baza kont Jadłem — logowanie jest opcjonalne i odbywa się przez Logowanie przez Apple. Nie zbieramy twoich danych osobowych, nie sprzedajemy ich i nie śledzimy cię. Jedyne, co możesz zdecydować się udostępnić, to dane produktu dodanego do wspólnego katalogu społeczności, opisanego poniżej.</p>
+<h2>Logowanie (opcjonalne)</h2>
+<p>Możesz używać Jadłem jako gość albo zalogować się przez Apple, aby twój dziennik należał do twojego konta, oddzielnie od innych osób korzystających z tego samego urządzenia. Logowanie obsługuje Apple; Jadłem nigdy nie widzi hasła.</p>
+<ul>
+<li>Gdy się logujesz, Apple przekazuje Jadłem identyfikator przypisany do ciebie i do tej aplikacji oraz — tylko za pierwszym razem — twoje imię i adres e-mail (może to być prywatny adres przekazujący Apple, jeśli zdecydujesz się ukryć swój). Jadłem przechowuje je w Pęku kluczy twojego urządzenia i nie wysyła ich do nas ani do nikogo innego — nie mamy serwera, do którego mogłyby trafić.</li>
+<li>Ten identyfikator jest zapisywany przy każdej rzeczy, którą rejestrujesz, aby każde konto na urządzeniu widziało tylko własne dane. Razem z resztą twoich danych jest synchronizowany przez twój prywatny iCloud.</li>
+<li>Każde konto ma własny klucz Gemini API i własną odpowiedź na pytanie o zgodę na zdjęcia w AI.</li>
+<li>Ty → Konto → Wyloguj się wraca do ekranu startowego i zostawia twoje dane na miejscu. Ty → Konto → Usuń konto usuwa konto i wszystko, co w nim jest (patrz niżej).</li>
+</ul>
+<h2>Co zostaje na twoim urządzeniu lub w twoim iCloud</h2>
+<ul>
+<li>Twój dziennik jedzenia, napoje, ważenia, ulubione, własne produkty, Zapas i ustawienia są przechowywane na twoim urządzeniu. Jeśli jesteś zalogowany w iCloud, są też synchronizowane przez twoją prywatną bazę iCloud (CloudKit), aby pojawiły się na innych twoich urządzeniach. Dostęp do tej bazy masz tylko ty; my jej nie widzimy.</li>
+<li>Twój klucz Gemini API (jeśli go dodasz) jest przechowywany w Pęku kluczy urządzenia i nie jest synchronizowany.</li>
+<li>Trener AI działa na twoim urządzeniu, korzystając z modelu Apple działającego lokalnie. Twoje rozmowy i liczby, z których korzysta, zostają na urządzeniu — z wyjątkiem sytuacji, gdy proponuje produkt do zapisania: wtedy przeszukuje te same publiczne bazy żywności co ręczne wyszukiwanie (patrz „Usługi, które otrzymują dane z aplikacji” poniżej), wysyłając tylko nazwę szukanego produktu, a nie twoją rozmowę.</li>
+<li>Na iPhonie z Apple Intelligence (iOS 27 lub nowszy) tryb Zdjęcie i tryb Etykieta odczytują twoje zdjęcia za pomocą modelu Apple działającego lokalnie. Zdjęcie nie jest nigdzie wysyłane i nie jest potrzebny żaden klucz API.</li>
+<li>Wprowadzanie głosowe do Zapasu i wyszukiwanie głosem korzysta z rozpoznawania mowy na urządzeniu, tam gdzie obsługuje ono twój język; w przeciwnym razie jest przetwarzane przez serwery rozpoznawania mowy Apple, tak samo jak Siri i inne funkcje dyktowania w iOS.</li>
+<li>Odczyt etykiety z wartościami odżywczymi za pomocą czytnika na urządzeniu odbywa się w całości na twoim urządzeniu.</li>
+</ul>
+<h2>Udostępnianie dodawanych produktów (opcjonalne)</h2>
+<p>Gdy zeskanujesz kod kreskowy, którego nie zna Open Food Facts ani USDA, i dodasz produkt samodzielnie, Jadłem proponuje udostępnić go wszystkim użytkownikom Jadłem, aby każdy, kto później zeskanuje ten kod, go znalazł. Przełącznik jest domyślnie włączony i przy każdym dodawaniu produktu możesz go wyłączyć.</p>
+<ul>
+<li><strong>Co jest udostępniane:</strong> kod kreskowy, nazwa produktu, marka, wielkość porcji i wartości odżywcze, które wpisałeś lub odczytałeś z etykiety. Nic więcej — nie twój dziennik, imię, e-mail, konto, zdjęcia ani reszta danych.</li>
+<li><strong>Dokąd trafia:</strong> do publicznej bazy hostowanej przez Apple (publiczna baza CloudKit kontenera iCloud Jadłem). Każdy użytkownik Jadłem może ją czytać. Dodawać do niej mogą tylko osoby zalogowane w iCloud. Apple dołącza do każdego wpisu anonimowy, specyficzny dla aplikacji identyfikator konta iCloud, które go utworzyło. Nie zawiera on twojego imienia ani e-maila, a sama aplikacja Jadłem nikomu go nie odczytuje ani nie pokazuje — jest jednak standardową, czytelną częścią każdego rekordu w publicznej bazie, więc ktoś, kto może odpytywać bazę bezpośrednio (nie tylko przez aplikację), mógłby w zasadzie go zobaczyć i użyć, by rozpoznać, że kilka produktów lub zgłoszeń pochodzi od tego samego anonimowego autora. Jeśli wolisz nie dodawać produktów, zostaw przełącznik udostępniania wyłączony, gdy zostaniesz zapytany, albo nie używaj „Dodaj ten produkt samodzielnie”.</li>
+<li><strong>Tylko produkty z kodem kreskowym.</strong> Własnoręcznie przygotowane potrawy i wszystko inne, co tworzysz, zostają prywatne.</li>
+<li><strong>Jeśli jesteś offline</strong> w chwili dodawania produktu, zostanie on wysłany przy następnym otwarciu Jadłem.</li>
+<li><strong>Usuwanie:</strong> udostępnione produkty należą do wspólnego katalogu i nie zawierają danych osobowych, więc nie są usuwane, gdy czyścisz dane lub usuwasz konto. Jeśli chcesz, aby dodany przez ciebie produkt został usunięty, albo zauważysz błędny lub niewłaściwy wpis, skorzystaj z kontaktu do wsparcia na stronie Jadłem w App Store.</li>
+</ul>
+<h2>Apple Zdrowie</h2>
+<p>Jeśli na to pozwolisz, Jadłem zapisuje w aplikacji Zdrowie kalorie, białko, węglowodany, tłuszcz i wagę, które rejestrujesz, oraz odczytuje twoją aktywną energię i ostatnią wagę. Dane zdrowotne są używane wyłącznie do działania tych funkcji. Nigdy nie służą do reklamy ani marketingu, nigdy nie są sprzedawane, nigdy nie są udostępniane osobom trzecim i nigdy nie są wysyłane do nas. Import wagi ze Zdrowia kopiuje do Jadłem jedną wartość dopiero po twoim potwierdzeniu — zostaje ona zapisana jako zwykłe ważenie, tak samo jak wpisane przez ciebie, i jest synchronizowana jak każde inne ważenie przez twoją prywatną bazę iCloud, jeśli jesteś zalogowany w iCloud (patrz „Co zostaje na twoim urządzeniu lub w twoim iCloud” powyżej).</p>
+<h2>Usługi, które otrzymują dane z aplikacji</h2>
+<ul>
+<li><strong>Open Food Facts, USDA FoodData Central i katalog społeczności.</strong> Gdy wyszukujesz produkt lub skanujesz kod kreskowy, tekst wyszukiwania lub numer kodu jest wysyłany do tych publicznych baz żywności (katalogiem społeczności jest opisana wyżej baza CloudKit), aby znaleźć produkt. Nie są dołączane żadne dane konta ani dane osobowe. Obowiązują polityki prywatności Open Food Facts i USDA, a w przypadku CloudKit — polityka Apple.</li>
+<li><strong>Google Gemini API (opcjonalne).</strong> Jeśli Apple Intelligence nie jest dostępne na twoim iPhonie albo jest dostępne, ale nie zdoła odczytać danego zdjęcia: jeśli dodasz własny klucz Gemini API i wyrazisz zgodę w aplikacji, zdjęcie zrobione w trybie Zdjęcie (oraz w trybie Etykieta, jeśli wybierzesz odczyt przez AI), wraz z odpowiedziami na pytania uzupełniające, które wpiszesz, jest wysyłane do Google Gemini API z krótką instrukcją, przy użyciu twojego klucza. Jadłem nie otrzymuje ani nie przechowuje tych zdjęć. Google przetwarza je zgodnie z warunkami i polityką prywatności Gemini API; w zależności od twojego planu Google może je przechowywać lub używać do ulepszania swoich produktów. Możesz to wyłączyć w dowolnej chwili w Ty → AI albo usunąć swój klucz.</li>
+</ul>
+<h2>Czego nie robimy</h2>
+<p>Jadłem nie zawiera reklam, analityki ani kodu śledzącego osób trzecich. Nie śledzi cię w innych aplikacjach ani na innych stronach.</p>
+<h2>Uprawnienia</h2>
+<p>Aparat (kody kreskowe, zdjęcia jedzenia, etykiety, zdjęcia do Zapasu), mikrofon i rozpoznawanie mowy (dyktowanie produktów do Zapasu lub wyszukiwanie głosem), powiadomienia (przypomnienia, które włączysz) oraz Apple Zdrowie są opcjonalne. Każde z nich możesz zmienić w aplikacji Ustawienia iOS.</p>
+<h2>Twoje dane i ich usuwanie</h2>
+<p>Ty → Dane → Wyczyść wszystkie dane usuwa wszystko, co bieżące konto (lub gość) zapisało w Jadłem, łącznie z kopiami synchronizowanymi przez twój iCloud; pozostałe konta na urządzeniu nie są dotknięte. Ty → Konto → Usuń konto usuwa także samo konto — jego dane, cele i ustawienia, zapisane imię i e-mail oraz klucz AI — z tego urządzenia i z twojego iCloud. Aby dodatkowo zatrzymać używanie twojego Apple ID przez Jadłem, wejdź w Ustawienia iOS → twoje imię → Logowanie przez Apple. Wpisy o jedzeniu, które Jadłem zapisało w aplikacji Zdrowie, również są usuwane; ważenia, które już są w Zdrowiu, tam zostają i zarządza się nimi w aplikacji Zdrowie. Usunięcie aplikacji usuwa jej dane z twojego urządzenia, z wyjątkiem klucza Gemini API i danych logowania przechowywanych przez iOS w Pęku kluczy, których iOS może nie usunąć razem z aplikacją — usuwa je Usuń konto lub usunięcie klucza w Ty → AI. Danymi w iCloud możesz też zarządzać w Ustawieniach iOS → twoje imię → iCloud.</p>
+<h2>Dzieci</h2>
+<p>Jadłem nie jest skierowane do dzieci poniżej 13. roku życia.</p>
+<h2>Zmiany</h2>
+<p>Jeśli ta polityka ulegnie zmianie, zaktualizowana wersja pojawi się w aplikacji i na stronie App Store, z nową datą powyżej.</p>
+<h2>Kontakt</h2>
+<p>Pytania dotyczące tej polityki: skorzystaj z kontaktu do wsparcia na stronie Jadłem w App Store.</p>
+<footer>Jadłem · jadlem</footer></main></body></html>
